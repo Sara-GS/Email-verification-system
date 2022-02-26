@@ -31,6 +31,7 @@ El modelo de usuario es:
 ✅ Task 6 → Al conseguir la key devuelta guardarla en el parámetro verifiedEmail del modelo de usuario y que se actualice a "true" el parámetro isVerified
 
 ✅ Task 7 → Testing unitario
+
 #### Instalacion
 
 npm install
