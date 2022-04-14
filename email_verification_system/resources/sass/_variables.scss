@@ -5,3 +5,83 @@ $body-bg: #f8fafc;
 $font-family-sans-serif: 'Nunito', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
+
+$body-bg: #f8fafc;
+$button-color: #7879F1;
+// Typography
+$font-family-sans-serif: 'Poppins', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+$white-text: #FCFCFC;
+
+#login_button {
+    background-color: $button-color;
+    color: $white-text;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text {
+    color: #5865F2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav-link.active {
+    color: #5865F2;
+    border-bottom: 3px solid #5865F2;
+    ;
+}
+
+.navCenter {
+    display: flex;
+    flex-direction: column;
+}
+
+.body {
+    background-color: chartreuse;
+}
+
+
+
+//Register button and letters
+$register_button-color: #7879F1;
+$letters_navBar_login_register: #5865F2;
+
+#register_button {
+    background-color: $register_button-color;
+    color: $white-text;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-link.active {
+    color: $letters_navBar_login_register;
+    border-bottom: 3px solid $letters_navBar_login_register;
+}
+#login-btn {
+    font-weight: bold;
+    text-align: center;
+    background-color: $login-btn;
+    color: $white-text;
+}
+
+#register-btn {
+    font-weight: bold;
+    text-align: center;
+    background-color: $register-btn;
+    color: $white-text;
+}
+
+#btn-sign {
+    background-color: $button-color;
+    border-color: $button-color;
+}
+
+.text{
+    color: #5865F2 ;
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+}
