@@ -22,7 +22,8 @@ El modelo de usuario es:
 
 ✅ Task 2 → Agregar un CRUD básico de usuario
 
-✅ Task 3 → Agregar una función/funciones que utilicen algún servicio de SMTP para enviar un correo al usuario (podéis hacerlo desde gmail o configurar un correo a través del algún hosting gratuito estilo ZOHO email)
+✅ Task 3 → Agregar una función/funciones que utilicen algún servicio de SMTP para enviar un correo al usuario (podéis hacerlo desde gmail o configurar un correo a través del algún hosting gratuito estilo ZOHO email) 
+![Captura de pantalla de mailtrap con la verificación](resources/assets/Email%20Verification%20System.png)
 
 ✅ Task 4 → Agregar un endpoint que permita llamar a la función anterior
 
@@ -31,6 +32,8 @@ El modelo de usuario es:
 ✅ Task 6 → Al conseguir la key devuelta guardarla en el parámetro verifiedEmail del modelo de usuario y que se actualice a "true" el parámetro isVerified
 
 ✅ Task 7 → Testing unitario
+
+
 
 #### Instalacion
 

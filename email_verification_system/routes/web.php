@@ -16,9 +16,9 @@ use Illuminate\Http\Request;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::get('email/verify', function () {
     return view('auth.verify-email');
@@ -42,4 +42,4 @@ Route::get('profile', function () {
     // Solo los usuarios verificados pueden ingresar ...
 })->middleware('verified');
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
