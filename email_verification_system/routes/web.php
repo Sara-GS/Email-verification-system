@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\Request;
+//use Illuminate\Contracts\Auth\MustVerifyEmail;
+// use App\Http\Controllers\Auth\LoginController;
+// use App\Http\Controllers\Auth\RegisterController;
 
 
 /*
@@ -16,13 +19,13 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('email/verify', function () {
     return view('auth.verify-email');
-})->middleware(['auth'])->name('verification.notice');
+})->middleware(['auth', 'verified'])->name('verification.notice');
 
 Auth::routes();
 
@@ -43,3 +46,8 @@ Route::get('profile', function () {
 })->middleware('verified');
 
  Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+//Route Hooks - Do not delete//
+	Route::view('users', 'livewire.users.index')->middleware('auth', 'verified');
